@@ -25,7 +25,6 @@ class TopicDAO:
             topic_model = Topic_model(id = id, user_topic = user_topic, created_at = created_at, updated_at = updated_at, topic_status = topic_status, topic_id = topic_id)
             session.add(topic_model)
             session.commit()
-            #add print
             session.explunge_all()
             return topic_model
     def update_item(self, id:str, user_topic:str, created_at:int, updated_at:int, topic_status:str, topic_id:str):
