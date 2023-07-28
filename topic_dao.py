@@ -1,4 +1,3 @@
-
 from sqlalchemy.orm import sessionmaker, scoped_session
 from base import Base
 from topic_model import Topic_model
